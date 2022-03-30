@@ -10,11 +10,16 @@
         <!--intégration de FontAwesome pour les icones-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
          
-        <!--importation des polices (Raleway) depuis google font-->
+        <!--importation des polices (Shrikhand) depuis google font pour les logos et titres-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        
+        <!--importation des polices (Roboto) depuis google font pour les textes-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
+        
         <!--je lie mon fichier html à mon fichier CSS
         Le premier permet de "normalizer" tous les styles selon les différents navigateurs
         Le deuxième pour spécifier les styles à ma page html-->
@@ -54,18 +59,17 @@
             <section class="fonctionnement">
                 <h2>Fonctionnement</h2>
                 <div class="btnFonctionnement">
-                    <div>1</div>
+                    <div class="numero">1</div>
                     <i class="fa-solid fa-mobile-screen-button"></i>
                     <p>Choisissez un restaurant</p> 
                 </div>
                 <div class="btnFonctionnement">
-                    <div>2</div>
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                    <i class="fa-solid fa-bars"></i>
+                    <div class="numero">2</div>
+                    <i class="fa-solid fa-list"></i>
                     <p>Composez votre menu</p> 
                 </div>
                 <div class="btnFonctionnement">
-                    <div>3</div>
+                    <div class="numero">3</div>
                     <i class="fa-solid fa-store"></i>
                     <p>Dégustez au restaurant</p> 
                 </div>

@@ -1,6 +1,6 @@
 /* mise en place de la police Raleway sur toute la page*/
 body{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*enlever le surlignage des liens et mettre en noir la police pour les liens*/
@@ -14,6 +14,12 @@ ul{
     list-style-type: none;
     /*j'enleve le padding-left par défaut*/
     padding-left: 0px;
+}
+
+
+.fonctionnement{
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 
@@ -104,13 +110,51 @@ header h1 img{
 
 
 
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
 
+}
 
 .btnFonctionnement{
     display: flex;
     flex-direction: row;
+    background: #f6f6f6;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 5px 5px 2px #97a8af;
 }
 
+.btnFonctionnement .numero{
+    background: #9356DC;
+    color: white;
+    /*taille de l'icone*/
+    font-size: 15px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    /*arrondir l'icone*/
+    border-radius: 40px;
+    /*centrer l'icone dans son cercle*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    margin-left: -20px;
+}
+
+.btnFonctionnement i{
+    font-size: 25px;
+    margin-right: 40px;
+}
+
+.btnFonctionnement p{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px;
+}
 
 
 
