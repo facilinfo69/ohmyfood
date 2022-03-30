@@ -1,0 +1,119 @@
+/* mise en place de la police Raleway sur toute la page*/
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+/*enlever le surlignage des liens et mettre en noir la police pour les liens*/
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ul{
+    /* enlever les puces sur la liste*/
+    list-style-type: none;
+    /*j'enleve le padding-left par défaut*/
+    padding-left: 0px;
+}
+
+
+
+header{
+    box-shadow: 0px 3px 5px #97a8af;
+}
+
+header h1{
+    margin: 0px;
+    text-align: center;
+    padding: 10px;
+}
+
+header h1 img{
+    padding-top: 15px;
+    height: 60px;
+    object-fit:contain;
+}
+
+
+.localisation{
+    display: flex;
+    justify-content: center;
+    background: #eaeaea;
+    margin-top: 5px;
+}
+
+.localisation i{
+    /*dimensionne l'icone*/
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    /*permet de centrer l'icône*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.localisation p{
+    margin: 0px;
+    font-weight: 700;
+    font-size: 20px;
+    align-self: center;
+}
+
+
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f6f6f6;
+    height: 300px;
+}
+
+.presentation h2, .presentation p{
+    width: 80%;
+    text-align: center;
+    margin: 0px;
+}
+
+.presentation h2{
+    font-weight: 800;
+    font-size: 30px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+.presentation p{
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+.presentation button{
+    font-size: 20px;
+    padding: 15px;
+    margin-bottom: 40px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    background: linear-gradient(to bottom right,#FF79DA, #9356DC);
+}
+
+
+
+
+
+
+.btnFonctionnement{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+.restaurant{
+    background: #f6f6f6;
+}
