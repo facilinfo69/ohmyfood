@@ -1,0 +1,184 @@
+/* mise en place de la police Raleway sur toute la page*/
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*enlever le surlignage des liens et mettre en noir la police pour les liens*/
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ul{
+    /* enlever les puces sur la liste*/
+    list-style-type: none;
+    /*j'enleve le padding-left par défaut*/
+    padding-left: 0px;
+    margin: 0px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+header i{
+    position: absolute;
+    top : 30px;
+    left:30px;
+    font-size: 25px;
+    align-self: center;
+}
+
+header h1{
+    margin: 0px;
+    text-align: center;
+    padding: 10px;
+}
+
+header h1 img{
+    padding-top: 15px;
+    height: 50px;
+    object-fit:contain;
+}
+
+main{
+    background: #f6f6f6;
+}
+
+figure{
+    margin: 0px;
+}
+/*mise en forme de l'image de la carte restaurant*/
+figure img{
+    width: 100%;
+    /*Permet d'ajuster l'image au bon format*/
+    object-fit: cover;
+}
+
+
+
+.menu{
+    background: #f6f6f6;
+    border-radius: 45px 45px 0px 0px;
+    position: relative;
+    top : -50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titre-Restaurant{
+    display: flex;
+    justify-content: space-between;
+}
+
+.titre-Restaurant h2{
+    font-family: Shrikhand;
+    padding-left: 20px;
+}
+
+.titre-Restaurant i{
+    padding-right: 40px;
+    align-self: center;
+    font-size: 30px;
+}
+
+
+
+
+
+.section_Menu{
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin-left: 15px;
+    width: 10%;
+    border-bottom: 4px solid #99E2D0;
+}
+
+
+.details_Plats{
+    margin: 15px;
+    border-radius: 25px;
+    box-shadow: -2px 5px 10px 3px #cecece;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.details_Plats .description{
+    margin-left: 10px;
+    width: 75%;
+}
+
+.details_Plats .description h3{
+    margin-bottom: 10px;
+}
+
+.details_Plats .description p{
+    margin-top: 10px;
+}
+
+.details_Plats .prix{
+    width: 20%;
+    align-self: flex-end;
+    font-weight: 700;
+}
+
+
+
+.menu .commander{
+    width: 60%;
+    align-self: center;
+    font-size: 20px;
+    padding: 15px 0px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    background: linear-gradient(to bottom right,#FF79DA, #9356DC);
+    box-shadow: -2px 5px 10px 3px #cecece;
+}
+
+
+
+
+footer {
+    background: #353535;
+    color: white;
+    height: 220px;
+}
+
+footer ul li a{
+    padding-left: 20px;
+    color: white;
+}
+
+footer ul li a i{
+    width: 20px;
+    margin-right: 15px;
+}
+
+footer .liens{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 150px;
+}
+
+footer h2{
+    font-family: 'Shrikhand', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0px;
+    padding: 20px 0px 0px 20px;
+}
+
+
+

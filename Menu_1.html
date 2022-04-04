@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!--titre dans la barre de titre-->
+        <title>ohmyfood</title>
+
+        <!--jeu de caractères-->
+        <meta charset="utf-8"/>
+        
+        <!--intégration de FontAwesome pour les icones-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+         
+        <!--importation des polices (Shrikhand) depuis google font pour les logos et titres-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        
+        <!--importation des polices (Roboto) depuis google font pour les textes-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap" rel="stylesheet">
+        
+        <!--je lie mon fichier html à mon fichier CSS
+        Le premier permet de "normalizer" tous les styles selon les différents navigateurs
+        Le deuxième pour spécifier les styles à ma page html-->
+        <!--integration des fichiers css-->
+        <link href="css/normalize.css" rel="stylesheet"/>
+        <link href="css/style_menu_1.css" rel="stylesheet"/>
+        
+        
+
+        <!--largeur de viewport égale à la largeur de l’appareil
+            niveau de zoom initial égal à 1
+            possibilité aux utilisateurs de zoomer ou dézoomer-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    </head>
+
+    <body>
+        <!--En tête de ma page ohmyfood-->
+        <header>
+            <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            <!--affiche le logo ohmyfood-->
+            <h1><img src="images/logo/ohmyfood.png" alt="Logo de l'agence ohmyfood" title="Logo ohmyfood"/></h1>
+        </header>
+        
+        <!--contenu principal de ma page : localisation, présentation,fonctionnement,restaurants-->
+        <main>
+            <figure>
+                <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image plat A la française">
+            </figure>
+            <section class="menu">
+                <div class="titre-Restaurant">
+                    <h2>A la française</h2> 
+                    <i class="fa-regular fa-heart coeur"></i>
+                </div>
+                <ul>
+                    <li class="section_Menu">ENTREES</li>
+                    <ul class="details_Plats">
+                        <div class="description">
+                            <h3>Tartare de poulpe acidulé</h3> 
+                            <p>Aux zests d'orange</p>
+                        </div>
+                        <div class="prix">
+                            <p>25€</p>
+                        </div>
+                    </ul>
+                    <ul class="details_Plats">
+                        <div class="description">
+                            <h3>Velouté de légumes d'antan</h3> 
+                            <p>Carotte, panais, topinambour</p>
+                        </div>
+                        <div class="prix">
+                            <p>35€</p>
+                        </div>
+                    </ul>
+                    <ul class="details_Plats">
+                        <div class="description">
+                            <h3>Soupe à l'oignon</h3> 
+                            <p>Revisitée</p>
+                        </div>
+                        <div class="prix">
+                            <p>20€</p>
+                        </div>
+                    </ul>
+                    <li class="section_Menu">PLATS</li>
+                    <ul class="details_Plats">
+                        <div class="description">
+                            <h3>Coquilles Saint-Jacques</h3> 
+                            <p>Accompagnées d'une purée de panais</p>
+                        </div>
+                        <div class="prix">
+                            <p>40€</p>
+                        </div>
+                    </ul>
+                    <ul class="details_Plats">
+                        <div class="description">
+                            <h3>Magret de canard</h3> 
+                            <p>Et parmentier de pommes de terre</p>
+                        </div>
+                        <div class="prix">
+                            <p>35€</p>
+                        </div>
+                    </ul>
+                    <ul class="details_Plats">
+                        <div class="description">
+                            <h3>Pigeonneau d’Ille-et-Vilaine</h3> 
+                            <p>Sur son lit de gnocchis aux légumes</p>
+                        </div>
+                        <div class="prix">
+                            <p>44€</p>
+                        </div>
+                    </ul>
+                    <li class="section_Menu">DESSERTS</li>
+                    <ul class="details_Plats">
+                        <div class="description">
+                            <h3>Pétales de violettes glacés</h3> 
+                            <p>Et purée de noisettes</p>
+                        </div>
+                        <div class="prix">
+                            <p>18€</p>
+                        </div>
+                    </ul>
+                    <ul class="details_Plats">
+                        <div class="description">
+                            <h3>Fondant au chocolat</h3> 
+                            <p>Revisité</p>
+                        </div>
+                        <div class="prix">
+                            <p>22€</p>
+                        </div>
+                    </ul>
+                    <ul class="details_Plats">
+                        <div class="description">
+                            <h3>Millefeuille croustillant</h3> 
+                            <p>Myrtilles et pâte d’amande</p>
+                        </div>
+                        <div class="prix">
+                            <p>23€</p>
+                        </div>
+                    </ul>
+                </ul>
+                <button class="commander" type="button">Commander</button>
+            </section>
+        </main>
+
+        <!--pied de page-->
+        <footer>
+           
+            <h2>ohmyfood</h2>
+            <ul class="liens">
+                <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+                <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+          
+        </footer>
+    </body>
+</html>
