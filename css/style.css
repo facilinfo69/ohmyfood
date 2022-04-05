@@ -139,8 +139,6 @@ header h1 img{
 .btnFonctionnement .numero{
     background: #9356DC;
     color: white;
-    /*taille de l'icone*/
-    font-size: 15px;
     font-weight: bold;
     width: 30px;
     height: 30px;
@@ -224,6 +222,7 @@ header h1 img{
     justify-content: space-between;
     height: 30%;
     padding: 0px 15px 0px 15px;
+    position: relative;
 }
 
 .description{
@@ -247,7 +246,55 @@ header h1 img{
 .container .coeur{
     font-size: 30px;
     align-self: center;
+    
 }
+
+.container .plein{
+    align-self: center;
+    position: absolute;
+    background-color:transparent;
+    background-image:linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+    background-clip: text;
+    color: transparent;
+    
+    right: 15px;
+}
+
+.container .plein:hover{
+    
+    background-color: #FF79DA;
+    background-image:linear-gradient(rgba(147,86,220,1),rgba(255,121,218,0));
+    transition:background-color 1s;
+
+}
+
+/*
+.container .plein{
+    align-self: center;
+    position: absolute;
+    background-color:transparent;
+    background-image:linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+    background-clip: text;
+    color: transparent;
+    
+    right: 15px;
+}
+
+.container .plein:hover{
+    
+    background-color: #FF79DA;
+    background-image:linear-gradient(rgba(147,86,220,1),rgba(255,121,218,0));
+    transition:background-color 1s;
+
+}*/
+
+    
+    
+
+
+
+
+
 
 
 
