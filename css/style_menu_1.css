@@ -108,20 +108,28 @@ figure img{
     box-shadow: -2px 5px 10px 3px #cecece;
     background: white;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
 }
 
 .details_Plats .description{
     margin-left: 10px;
     width: 75%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .details_Plats .description h4{
     margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .details_Plats .description p{
     margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .details_Plats .prix{
@@ -130,6 +138,35 @@ figure img{
     font-weight: 700;
 }
 
+.details_Plats .check{
+    /*centrer l'icone dans son cercle*/
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    border-radius: 0px 25px 25px 0px;
+    background: #99E2D0;
+    color: white;
+    opacity: 0;
+    width: 0%; 
+
+    transition: all 750ms;
+}
+
+li.details_Plats:hover .check{
+    width: 30%;
+    opacity: 1;
+    cursor:pointer;
+}
+
+li.details_Plats i{
+    transition: all 750ms;
+}
+
+li.details_Plats:hover i{
+    transform: rotate(360deg);
+}
 
 
 .menu .commander{
