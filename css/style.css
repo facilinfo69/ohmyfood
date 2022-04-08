@@ -246,50 +246,23 @@ header h1 img{
 .container .coeur{
     font-size: 30px;
     align-self: center;
-    
 }
 
 .container .plein{
     align-self: center;
     position: absolute;
-    background-color:transparent;
-    background-image:linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
-    background-clip: text;
-    color: transparent;
-    
     right: 15px;
+    opacity: 0;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image:linear-gradient(to bottom,#9356DC, #FF79DA);
+    transition: all 1s;
 }
 
 .container .plein:hover{
-    
-    background-color: #FF79DA;
-    background-image:linear-gradient(rgba(147,86,220,1),rgba(255,121,218,0));
-    transition:background-color 1s;
-
+   opacity: 1;
 }
-
-/*
-.container .plein{
-    align-self: center;
-    position: absolute;
-    background-color:transparent;
-    background-image:linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
-    background-clip: text;
-    color: transparent;
-    
-    right: 15px;
-}
-
-.container .plein:hover{
-    
-    background-color: #FF79DA;
-    background-image:linear-gradient(rgba(147,86,220,1),rgba(255,121,218,0));
-    transition:background-color 1s;
-
-}*/
-
-    
-    
 
 
 
