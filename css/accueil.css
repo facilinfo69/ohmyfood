@@ -10,6 +10,22 @@ header{
     margin-top: 4px;
 }
 
+.non-Visible{
+    position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap; /* added line */
+      border: 0;
+}
+
+.localisation h2{
+    margin: 0;
+}
+
 .localisation i{
     /*dimensionne l'icone*/
     width: 50px;
@@ -68,6 +84,11 @@ header{
     box-shadow: -2px 5px 10px 3px #cecece;
 }
 
+.presentation button:hover{
+    background: linear-gradient(to bottom right,rgb(255, 121, 218,0.8), rgb(147, 86, 220,0.8));
+    box-shadow: -2px 5px 10px 3px #2c2626;
+}
+
 
 
 
@@ -93,6 +114,14 @@ header{
     align-items: center;
     justify-content: flex-start;
     box-shadow: -2px 5px 10px 3px #efefef;
+}
+
+.btnFonctionnement:hover{
+    background: rgb(147, 86, 220,0.2);
+}
+
+.btnFonctionnement:hover i{
+    color: #9356DC;
 }
 
 .btnFonctionnement .numero{
@@ -134,6 +163,8 @@ header{
     /*espacement de 20 px à l'intérieur du bloc*/
      padding: 40px 20px;
      margin-top: 40px;
+     display: flex;
+     flex-direction: column;
 }
 
 /*mise en forme de la carte restaurant*/
@@ -144,6 +175,12 @@ header{
     /*espacement de 30 px entre chaque carte des lignes des blocs*/
     margin-bottom: 30px;
     box-shadow: -2px 5px 10px 3px #efefef;
+    position: relative;
+}
+
+.restaurant .carte:hover{
+    opacity: 0.8;
+    box-shadow: -2px 5px 10px 3px #2c2626;
 }
 
 /*mise en forme de l'image de la carte restaurant*/
@@ -193,4 +230,40 @@ header{
 
 .container p{
     font-weight: 300;
+}
+
+
+
+
+
+@media screen and (min-width: 700px) {
+    .desktop{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .presentation {
+        width:50%;
+        height: 500px;
+        background: white;
+     }
+    .fonctionnement{
+         width: 50%;
+     }
+
+    .restaurant{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .restaurant h2{
+        width: 100%;
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .restaurant a{
+      width: 45%;
+    }
 }

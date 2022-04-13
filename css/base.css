@@ -1,6 +1,13 @@
 /* mise en place de la police Raleway sur toute la page*/
 body{
     font-family: 'Roboto', sans-serif;
+    max-width: 1280px;
+    margin: auto;
+    background-color: #555;
+}
+
+header, main{
+    background-color: white;
 }
 
 /*enlever le surlignage des liens et mettre en noir la police pour les liens*/
@@ -25,11 +32,19 @@ h2{
     padding-right: 35px;
 }
 
+.loading.spinner{
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
 .loading i{
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    top: 50%;
+    position: fixed;
+    width: 100px;
     font-size: 100px;
 }
 
@@ -114,7 +129,7 @@ header h1 img{
     align-self: center;
 }
 
-.plein{
+.coeur.plein{
     align-self: center;
     position: absolute;
     right: 15px;
@@ -123,10 +138,10 @@ header h1 img{
     background-clip: text;
     -webkit-background-clip: text;
     background-image:linear-gradient(to bottom,#9356DC, #FF79DA);
-    transition: all 1s;
+    transition: all 500ms;
 }
 
-.plein:hover{
+.coeur.plein:hover{
    opacity: 1;
 }
 
@@ -164,3 +179,11 @@ footer h2{
     margin: 0px;
     padding: 20px 0px 0px 20px;
 }
+
+
+/*
+@media screen and (min-width: 700px) {
+    .loading i{
+        left: 48%;
+    }
+}*/
