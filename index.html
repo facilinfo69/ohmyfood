@@ -22,7 +22,7 @@
         
         <!--je lie mon fichier html à mon fichier CSS
         Le premier permet de "normalizer" tous les styles selon les différents navigateurs
-        Le deuxième pour spécifier les styles à ma page html-->
+        Le deuxième et troisième pour spécifier les styles à ma page html-->
         <!--integration des fichiers css-->
         <link href="css/normalize.css" rel="stylesheet"/>
         <link href="css/base.css" rel="stylesheet"/>
@@ -37,6 +37,7 @@
     </head>
 
     <body>
+        <!--3 icônes necessaires pour le loading spinner-->
         <div class="loading spinner">
             <i class="fa-solid fa-utensils spinnerun"></i>
             <i class="fa-solid fa-wine-glass spinnerdeux"></i>
@@ -50,13 +51,11 @@
         
         <!--contenu principal de ma page : localisation, présentation,fonctionnement,restaurants-->
         <main>
-            <!-- Recherche pour trouver un hébergement / Filtres-->
-            <section class="localisation"> 
-                <h2 class="non-Visible">localisation du restaurant</h2>
+            <div class="localisation"> 
                 <i class="fa-solid fa-location-dot"></i>
                 <p>Paris, Belleville</p>
-            </section>
-            
+            </div>
+            <!--encadrer présentation et fonctionnement dans une div desktop pour permettre l'affichage en mode desktop sur une ligne-->
             <div class="desktop">
                 <section class="presentation">
                     <h2>Réservez le menu qui vous convient</h2>
@@ -95,6 +94,7 @@
                                 <h3>La palette du goût</h3> 
                                 <p>Ménilmontant</p>
                             </div>
+                            <!--superposition de deux icones coeur, un plein et un vide, pour permettre l'animation-->
                             <i class="fa-regular fa-heart coeur"></i>
                             <i class="fa-solid fa-heart coeur plein"></i>
                         </div>

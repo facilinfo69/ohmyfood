@@ -60,13 +60,14 @@ figure img{
     right: 0px;
 }
 
-
+/*soulignement des intitulés entrées, plats, desserts*/
 .section_Menu{
     padding-top: 15px;
     padding-bottom: 5px;
     margin-left: 15px;
     width: 10%;
     border-bottom: 4px solid #99E2D0;
+    
 }
 
 
@@ -77,12 +78,11 @@ figure img{
     background: white;
     display: flex;
     flex-direction: row;
-    /*flex-wrap: wrap;*/
 }
 
 
 
-
+/*animation apparition progressive des plats*/
 @keyframes transition {
     0%{
         opacity:0; 
@@ -104,6 +104,7 @@ figure img{
     margin-left: 10px;
     width: 75%;
     white-space: nowrap;
+    /*permet de mettre les 3 ... quand le texte dépasse*/
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -128,9 +129,9 @@ figure img{
     font-weight: 700;
 }
 
+/*animation sur la validation su plat*/
 .details_Plats .check{
     /*centrer l'icone dans son cercle*/
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,6 +189,10 @@ li.details_Plats:hover i{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+    }
+
+    .titre-Restaurant{
+        padding-left: 15px;
     }
 
     .desktop-menu >li{
