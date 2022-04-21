@@ -93,10 +93,10 @@ figure img{
         transform: translateY(0px);
     }
     }
-.un {opacity:0;animation: transition 1s ease-in-out 3s forwards;}
-.deux {opacity:0;animation: transition 1s ease-in-out 3200ms forwards;}
-.trois {opacity:0;animation: transition 1s ease-in-out 3400ms forwards;}
-.quatre {opacity:0;animation: transition 1s ease-in-out 3600ms forwards;}
+.un {opacity:0;animation: transition 1s ease-in-out 100ms forwards;}
+.deux {opacity:0;animation: transition 1s ease-in-out 200ms forwards;}
+.trois {opacity:0;animation: transition 1s ease-in-out 400ms forwards;}
+.quatre {opacity:0;animation: transition 1s ease-in-out 600ms forwards;}
 
 
 

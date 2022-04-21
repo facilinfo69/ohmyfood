@@ -1,3 +1,86 @@
+/*centre le loading spinner sur la page entière*/
+.loading.spinner{
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading i{
+    position: fixed;
+    width: 100px;
+    font-size: 100px;
+}
+
+/*animation du loading spinner
+1ere étape : icone "fourchette" couleur blanc à #9356DC(violet) avec rotation et grossissement x2
+2ème étape : icone "verre" couleur #9356DC(violet) à #FF79DA(rose) avec rotation et grossissement x2
+3ème étape : icone "couvercle" couleur #FF79DA(rose) à #99E2D0(vert) avec rotation et grossissement x2
+ */
+
+ @keyframes loading-Spinner1{
+    0%{
+        opacity:1;
+        color:white;
+        transform: rotate(0deg) scale(0);
+    }
+    
+    100%{
+        opacity:1; 
+        transform: rotate(360deg) scale(2);
+        color:#9356DC;
+    }
+}
+
+@keyframes loading-Spinner2{
+    0%{
+        opacity:1;
+        transform: rotate(0deg) scale(2);
+        color:#9356DC;
+    }
+   
+    100%{
+        opacity:1; 
+        transform: rotate(360deg) scale(0);
+        color:#FF79DA;
+    }
+}
+
+@keyframes loading-Spinner3{
+    0%{
+        opacity:1;
+        transform: rotate(0deg) scale(0);
+        color:#FF79DA;
+    }
+   
+    100%{
+        opacity:1; 
+        transform: rotate(360deg) scale(2);
+        color:#99E2D0;
+    }
+}
+
+/*affichage header/main/footer après l'animation du loading spinner 3secondes*/
+@keyframes affichage-Page{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1; 
+    }
+}
+
+.spinnerun {opacity:0;animation: loading-Spinner1 1s ease-in-out 0s;}
+.spinnerdeux {opacity:0;animation: loading-Spinner2 1s ease-in-out 1s;}
+.spinnertrois {opacity:0;animation: loading-Spinner3 1s ease-in-out 2s;}
+
+header{opacity: 0;animation: affichage-Page 100ms ease-in-out 3s forwards;}
+main{opacity: 0;animation: affichage-Page 100ms ease-in-out 3s forwards;}
+footer{opacity: 0;animation: affichage-Page 100ms ease-in-out 3s forwards;}
+
 
 header{
     box-shadow: 0px 5px 5px #dbdbdb;
